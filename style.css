@@ -1,0 +1,750 @@
+/* body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #373A40;
+    color: #fff;
+    position: sticky;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar li {
+    margin: 0 10px;
+}
+
+.nav-bar li svg {
+    vertical-align: middle; 
+}
+
+#first-slide, #second-slide {
+    padding: 20px;
+    text-align: center;
+    margin-top: 80px; 
+}
+
+#first-slide h1, #second-slide h1 {
+    font-size: 2.5rem;
+}
+
+.buttons {
+    font-size: 16px; 
+    margin: 10px;  
+    margin-top: 20px;          
+    transition: background-color 0.3s; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#learn-1,#learn-2{
+    background-color: #3572EF;
+    border-color: white;
+    color: white;
+    border-radius: 12px; 
+    padding: 10px 20px;  
+    border: none;        
+    cursor: pointer;     
+}
+
+#film,#buy {
+    border-radius: 12px; 
+    padding: 10px 20px;  
+    border: 1px solid;        
+    cursor: pointer;     
+    border-color: #3572EF;
+    color: #3572EF;
+    background-color: white;
+}
+
+#film:hover{
+    background-color: #3572EF;
+    color: white;
+}
+
+#buy:hover{
+    background-color: #3572EF;
+    color: white;
+}
+
+.full {
+    max-width: 100%;
+    height: max-content;
+}
+
+.dark{
+    background-color: white;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.titanium{
+    padding-top: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.pro{
+    padding-top: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+#ti{
+    height: 600px;
+    width: 625px;
+}
+
+#pr{
+    height: 500px;
+    width: 625px;
+}
+
+.dark-learn{
+    border: 2px solid #3572EF;
+    border-radius: 12px;
+    background-color: #3572EF;
+    color: white;
+    padding: 10px 20px; 
+    cursor: pointer;
+}
+
+.dark-buy{
+    background-color: black;
+    color: #3572EF;
+    border: 2px solid #3572EF;
+    border-radius: 12px;
+    padding: 10px 20px; 
+    cursor: pointer;
+}
+
+.pro h1{
+    font-size: 2.5rem;
+}
+
+.titanium h1{
+    font-size: 2.5rem;
+}
+
+.pro h2{
+    font-size: 1.25rem;
+    font-family: "Raleway", sans-serif;
+}
+
+.titanium h2{
+    font-size: 1.25rem;
+    font-family: "Raleway", sans-serif;
+}
+
+.dark-buy:hover{
+    background-color: #3572EF;
+    color: white;
+}
+
+.light{
+    background-color: white;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.air{
+    padding-top: 10px;
+    background: linear-gradient(to bottom, #87CEFA, #B0E0E6); 
+    color: white;
+    text-align: center;
+}
+
+.macbook{
+    padding-top: 10px;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+}
+
+.air h1,.macbook h1{
+    font-size: 2.5rem;
+}
+
+.air h2,.macbook h2{
+    font-size: 1,25rem;
+    font-family: "Raleway", sans-serif;
+}
+
+#ipad-learn{
+    border: 2px solid black;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px; 
+    cursor: pointer;
+}
+
+#ipad-buy{
+    border: 2px solid black;
+    border-radius: 12px;
+    background-color:lightskyblue;
+    color: black;
+    padding: 10px 20px; 
+    cursor: pointer;
+}
+
+#mac-learn{
+    border: 2px solid #3572EF;
+    border-radius: 12px;
+    background-color: #3572EF;
+    color: white;
+    padding: 10px 20px; 
+    cursor: pointer;
+}
+
+#mac-buy{
+    border: 2px solid #3572EF;
+    border-radius: 12px;
+    background-color:whitesmoke;
+    color: #3572EF;
+    padding: 10px 20px; 
+    cursor: pointer;
+}
+
+#ipad-buy:hover{
+    background-color: black;
+    color: white;
+}
+
+#mac-buy:hover{
+    background-color: #3572EF;
+    color: white;
+}
+
+.ipad-air{
+    font-family: "Playwrite SK", cursive;
+    font-weight: bold;
+}
+
+.last-text{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 10px;
+}
+
+li{
+    list-style: none;
+}
+
+#last-slide {
+    background-color: white;
+    padding: 20px;
+}
+
+#last-slide .content p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#last-slide .content ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#last-slide .content ul li {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#last-slide hr {
+    border: 1px solid #e0e0e0;
+    margin: 20px 0;
+}
+
+#last-slide .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#last-slide .column {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+#last-slide .column h3 {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#last-slide .column ul {
+    list-style: none;
+    padding: 0;
+}
+
+#last-slide .column ul li {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    #last-slide .footer {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-bar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-bar li {
+        margin: 5px 0;
+    }
+
+    #first-slide h1, #second-slide h1 {
+        font-size: 2rem;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 80%;
+        margin: 5px 0;
+    }
+
+    .dark, .light {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-bar {
+        padding: 10px;
+    }
+
+    .nav-bar li {
+        font-size: 0.9rem;
+    }
+
+    #first-slide h1, #second-slide h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .dark, .light {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titanium, .pro, .air, .macbook {
+        width: 100%;
+    }
+
+    #ti, #pr {
+        width: 100%;
+        height: auto;
+    }
+    .footer{
+        flex-wrap: wrap;
+    }
+} */
+
+
+
+/* Ensure images are responsive */
+.full img, .t img, .p img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Base styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #373A40;
+    color: #fff;
+    position: sticky;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.nav-bar ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar li {
+    margin: 0 10px;
+}
+
+.nav-bar li svg {
+    vertical-align: middle; 
+}
+
+#first-slide, #second-slide {
+    padding: 20px;
+    text-align: center;
+    margin-top: 80px; 
+}
+
+#first-slide h1, #second-slide h1 {
+    font-size: 2.5rem;
+}
+
+.buttons {
+    font-size: 16px; 
+    margin: 10px;  
+    margin-top: 20px;          
+    transition: background-color 0.3s; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+#learn-1, #learn-2 {
+    background-color: #3572EF;
+    border-color: white;
+    color: white;
+    border-radius: 12px; 
+    padding: 10px 20px;  
+    border: none;        
+    cursor: pointer;     
+}
+
+#film, #buy {
+    border-radius: 12px; 
+    padding: 10px 20px;  
+    border: 1px solid;        
+    cursor: pointer;     
+    border-color: #3572EF;
+    color: #3572EF;
+    background-color: white;
+}
+
+#film:hover, #buy:hover {
+    background-color: #3572EF;
+    color: white;
+}
+
+.full {
+    max-width: 100%;
+    height: max-content;
+}
+
+.dark {
+    background-color: white;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.titanium {
+    padding-top: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.pro {
+    padding-top: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.dark-learn, .dark-buy {
+    border-radius: 12px;
+    padding: 10px 20px; 
+    cursor: pointer;
+}
+
+.dark-learn {
+    background-color: #3572EF;
+    color: white;
+    border: 2px solid #3572EF;
+}
+
+.dark-buy {
+    background-color: black;
+    color: #3572EF;
+    border: 2px solid #3572EF;
+}
+
+.dark-buy:hover {
+    background-color: #3572EF;
+    color: white;
+}
+
+.pro h1, .titanium h1 {
+    font-size: 2.5rem;
+}
+
+.pro h2, .titanium h2 {
+    font-size: 1.25rem;
+    font-family: "Raleway", sans-serif;
+}
+
+.light {
+    background-color: white;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.air {
+    padding-top: 10px;
+    background: linear-gradient(to bottom, #87CEFA, #B0E0E6); 
+    color: white;
+    text-align: center;
+}
+
+.macbook {
+    padding-top: 10px;
+    background-color: whitesmoke;
+    color: black;
+    text-align: center;
+}
+
+.air h1, .macbook h1 {
+    font-size: 2.5rem;
+}
+
+.air h2, .macbook h2 {
+    font-size: 1.25rem;
+    font-family: "Raleway", sans-serif;
+}
+
+#ipad-learn{
+    border: 2px solid black;
+    border-radius: 12px;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#mac-learn {
+    border: 2px solid #3572EF;
+    border-radius: 12px;
+    background-color: #3572EF;
+    color: white;
+    padding: 10px 20px; 
+    cursor: pointer;
+}
+
+#ipad-buy, #mac-buy {
+    border-radius: 12px;
+    padding: 10px 20px; 
+    cursor: pointer;
+}
+
+#ipad-buy {
+    border: 2px solid black;
+    background-color: lightskyblue;
+    color: black;
+}
+
+#mac-buy {
+    border: 2px solid #3572EF;
+    background-color: whitesmoke;
+    color: #3572EF;
+}
+
+#ipad-buy:hover{
+    background-color: black;
+    color: white;
+}
+
+#mac-buy:hover {
+    background-color: #3572EF;
+    color: white;
+}
+
+.ipad-air {
+    font-family: "Playwrite SK", cursive;
+    font-weight: bold;
+}
+
+.last-text {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px 10px;
+}
+
+li {
+    list-style: none;
+}
+
+#last-slide {
+    background-color: white;
+    padding: 20px;
+}
+
+#last-slide .content p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#last-slide .content ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#last-slide .content ul li {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+#last-slide hr {
+    border: 1px solid #e0e0e0;
+    margin: 20px 0;
+}
+
+#last-slide .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#last-slide .column {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+#last-slide .column h3 {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+#last-slide .column ul {
+    list-style: none;
+    padding: 0;
+}
+
+#last-slide .column ul li {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-bar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-bar li {
+        margin: 5px 0;
+    }
+
+    #first-slide h1, #second-slide h1 {
+        font-size: 2rem;
+    }
+
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    button {
+        width: 80%;
+        margin: 5px 0;
+    }
+
+    .dark, .light {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-bar {
+        padding: 10px;
+    }
+
+    .nav-bar li {
+        font-size: 0.9rem;
+    }
+
+    #first-slide h1, #second-slide h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .dark, .light {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .titanium, .pro, .air, .macbook {
+        width: 100%;
+    }
+
+    /* Ensure images scale properly on very small screens */
+    #ti, #pr {
+        width: 100%;
+        height: auto;
+    }
+
+    .footer {
+        flex-wrap: wrap;
+    }
+}
